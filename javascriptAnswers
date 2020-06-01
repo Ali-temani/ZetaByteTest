@@ -1,0 +1,146 @@
+
+
+			-----Section 1-------
+
+let and const are used for declaring variables , let is used for block scoped and const is also block scoped but  used when you  dont want  to reassign  
+a new value.
+
+______________________________________________________________
+Post 1 is written by Junuman
+
+______________________________________8________________________
+
+var arr = [0, 1, 2];
+const input = [3, -1, 4, -2]
+function insert(array){
+var odd = arr.length;
+var even = arr.length;
+ for (var j = 0; input.length; j++) {
+	if ( input[j] % 2 == 0) {
+	even = even + 1 ;
+	arr[even]=input[j];
+}else{
+	odd = odd - 1 ;
+	arr[odd]=input[j];
+	
+	}
+
+}
+insert(input);
+console.log(arr); //output should be [ -2, -1, 0, 1, 2, 3, 4 ]
+
+
+_______________________________________________________________________________
+
+
+							------------Section 2----------------
+
+
+   undefined
+
+_______________________________________________________________________________
+
+Hoisting is a JavaScript mechanism where variables and function declarations are moved to the top of their scope before code execution.
+
+
+
+______________________________________________________________________________
+
+
+A callback function is a function passed into another function as an argument,
+
+function functionOne(x) { return x; };
+
+function functionTwo(var1) {
+    // some code
+}
+
+functionTwo(functionOne);
+
+______________________________________
+
+use === or Object.is(). 
+____________________________
+
+
+ a closure gives you access to an outer function’s scope from an inner function
+ _______________________________________________
+ 
+ function palindrome(str) {
+ str = str.split("");
+ var i = str.length;
+ var check = true;
+ if (i > 1) {
+    for (var j = 0; j < i / 2; j++) {
+        if (str[j] != str[i - 1 - j]) {
+            check = false;
+            break;
+           }
+        }
+        console.log(check);
+    } 
+}
+
+
+
+
+
+
+________________________________________________________
+
+
+//5 stars
+
+function generateStar() {
+    var totalNumberofRows = 5;
+    var output = '';
+    for (var i = 1; i <= totalNumberofRows; i++) {
+	if  (i == totalNumberofRows ){
+	
+        for (var j = 1; j <= i; j++) {
+                   console.log(output);
+
+        }
+		}
+	
+		
+        console.log(output);
+        
+    
+	}
+}
+
+generateStar();
+   
+____________________________________________________
+
+
+
+
+var DataFilter =  data.filter(function(obj) {
+  return obj.age > 20 &&
+         obj.course.paid != null &&
+         obj.course.subcourse.episode = 1 
+});
+
+_______________________________________________
+
+
+
+var l = 0;
+var s = 0;
+var result = true;
+
+
+for (o in data.positions) {
+    if (o[type] == 'leader’) {
+       l++;
+    }
+	
+	if (o[type] == 'senior’) {
+       s++;
+    }
+}
+if( l>1 || l>5){result=false}
+
+console.log(result)
